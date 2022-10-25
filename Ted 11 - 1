@@ -1,0 +1,24 @@
+#Escreva um algoritmo que permita a leitura dos nomes de 10 clubes de futebol e armazene os nomes lidos em um vetor (lista).
+# Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de clube e depois escrever a mensagem ACHEI, 
+#se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário
+
+
+
+clubes = []
+print ("digite 10 clubes")
+for x in range(1,11):
+     clube = input(f"digite o clube {x} ")
+clubes.append(clube)
+
+print(clubes)
+clube = input("escreva o nome do clube ")
+achei = False
+for x in clubes:
+    if x == clube:
+        achei = True  
+        break
+
+if achei == True:
+  print('achei!')
+else:
+  print('Não achei!')
